@@ -2,63 +2,229 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Discover elegant women's fashion, jewelry, beauty and footwear at our online boutique.">
-<title>Queen's Closet | Fashion & Beauty</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101711">
+<title>Queen's Closet | Kenyan Fashion</title>
 <style>
-:root{--cream:#fbf7f0;--paper:#fffdf9;--ink:#211d19;--muted:#766d63;--gold:#b38b4d;--line:#e9dfd1;--rose:#ead8d0}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif}a{color:inherit;text-decoration:none}button,input,select{font:inherit}.announcement{background:var(--ink);color:#fff;text-align:center;padding:10px 14px;font-size:12px;letter-spacing:1.5px}.header{background:var(--paper);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}.nav{max-width:1180px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:18px 22px}.brand{font-family:Georgia,serif;font-size:24px;letter-spacing:1px}.brand span{color:var(--gold)}.navlinks{display:flex;gap:22px;font-size:13px}.cart-btn,.btn{border:0;background:var(--ink);color:white;padding:12px 17px;cursor:pointer;letter-spacing:.5px}.cart-btn{white-space:nowrap}.hero{max-width:1180px;margin:28px auto 0;padding:0 22px}.hero-inner{min-height:430px;display:grid;grid-template-columns:1.05fr .95fr;background:#eee3d6;overflow:hidden}.hero-copy{padding:clamp(28px,6vw,72px);align-self:center}.eyebrow{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);font-weight:bold}.hero h1{font:normal clamp(38px,5vw,65px)/1.05 Georgia,serif;margin:18px 0}.hero p{color:#5e554c;line-height:1.7;max-width:440px}.hero-image{min-height:330px;background:linear-gradient(0deg,#0001,#0000),url('https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=85') center/cover}.section{max-width:1180px;margin:68px auto;padding:0 22px}.section-head{text-align:center;margin-bottom:28px}.section h2{font:normal clamp(29px,4vw,42px) Georgia,serif;margin:10px 0}.section-head p{color:var(--muted);font-size:14px}.categories{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.category{height:150px;background:#e8ddd0;display:flex;align-items:end;padding:18px;font:22px Georgia,serif;position:relative;overflow:hidden}.category:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#1e1710a8,transparent 75%)}.category span{position:relative;color:white}.cat1{background:linear-gradient(135deg,#d9c4a6,#77604b)}.cat2{background:linear-gradient(135deg,#e7c9cb,#b48d83)}.cat3{background:linear-gradient(135deg,#d6c3ae,#8b7763)}.cat4{background:linear-gradient(135deg,#d8d4ca,#79756c)}.toolbar{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:20px}.toolbar select{padding:10px;border:1px solid var(--line);background:white}.products{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.product{background:var(--paper);border:1px solid var(--line);padding:10px}.product img{width:100%;height:220px;object-fit:cover;background:#eee}.product .tag{font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--gold);margin-top:12px}.product h3{font:18px Georgia,serif;margin:7px 0}.product .desc{font-size:12px;color:var(--muted);min-height:30px;line-height:1.5}.price-row{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:12px}.price{font-weight:bold}.add{border:1px solid var(--gold);background:transparent;padding:9px 11px;cursor:pointer;font-size:12px}.add:hover{background:var(--gold);color:white}.banner{background:#e9ded0;text-align:center;padding:40px 20px}.banner h2{font:normal 32px Georgia,serif;margin:8px}.banner p{color:var(--muted);font-size:14px}.about{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}.about-art{min-height:270px;background:linear-gradient(135deg,#e8d9ca,#bba28b);display:grid;place-items:center;font:italic 36px Georgia,serif;color:#fff}.about p{line-height:1.8;color:var(--muted)}.footer{background:var(--ink);color:#fff;padding:38px 22px;margin-top:60px}.footer-inner{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer p{color:#d1c8be;font-size:13px}.small{font-size:12px;color:#c4b8a9}.cart-panel{position:fixed;right:0;top:0;height:100dvh;width:min(410px,100%);background:var(--paper);z-index:30;box-shadow:-10px 0 40px #0002;padding:22px;transform:translateX(110%);transition:transform .25s;display:flex;flex-direction:column}.cart-panel.open{transform:translateX(0)}.cart-top{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:14px}.cart-top h2{font:26px Georgia,serif}.close{background:none;border:0;font-size:25px;cursor:pointer}.cart-items{overflow:auto;flex:1}.cart-item{display:flex;justify-content:space-between;gap:10px;padding:14px 0;border-bottom:1px solid var(--line)}.cart-item small{display:block;color:var(--muted);margin-top:5px}.qty{display:flex;align-items:center;gap:8px;margin-top:8px}.qty button{background:#eee5d9;border:0;padding:4px 8px;cursor:pointer}.cart-bottom{border-top:1px solid var(--line);padding-top:16px}.total{display:flex;justify-content:space-between;font-weight:bold;margin-bottom:14px}.checkout{width:100%;padding:14px;background:#23784c;color:white;border:0;cursor:pointer}.note{font-size:11px;color:var(--muted);line-height:1.5}.overlay{display:none;position:fixed;inset:0;background:#0006;z-index:20}.overlay.show{display:block}.empty{color:var(--muted);padding:20px 0}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--ink);color:white;padding:12px 18px;z-index:50;display:none}
-@media(max-width:800px){.navlinks{display:none}.hero-inner{grid-template-columns:1fr}.hero-image{min-height:270px;grid-row:1}.hero-copy{padding:30px}.categories{grid-template-columns:repeat(2,1fr)}.products{grid-template-columns:repeat(2,1fr);gap:10px}.product img{height:180px}.about{grid-template-columns:1fr}.section{margin:48px auto}.toolbar{align-items:flex-start;flex-direction:column}}
-@media(max-width:420px){.brand{font-size:20px}.cart-btn{padding:10px;font-size:12px}.product{padding:7px}.product img{height:145px}.product h3{font-size:16px}.add{padding:8px 7px}}
+:root{--bg:#101711;--panel:#1b241d;--panel2:#232e25;--gold:#d8ad59;--green:#24583d;--text:#f2eadb;--muted:#b9b5a8;--border:#39463a}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,sans-serif}
+header{background:#080c09;border-bottom:1px solid var(--gold);padding:24px 15px;text-align:center}
+header h1{color:var(--gold);letter-spacing:4px;margin:0;font-family:Georgia,serif;font-size:clamp(27px,5vw,42px)}
+header p{color:var(--muted);letter-spacing:2px;margin:10px 0 0;font-size:12px}
+nav{display:flex;justify-content:center;gap:9px;flex-wrap:wrap;padding:16px;background:#141d16;position:sticky;top:0;z-index:5;border-bottom:1px solid var(--border)}
+button,select{font:inherit;border:1px solid var(--gold);border-radius:5px;padding:10px 13px;cursor:pointer}
+button{background:var(--green);color:var(--text)}
+button:hover{background:#326b4b}
+nav button{background:#202a21}
+nav button.active{background:var(--gold);color:#17140c}
+.hero{padding:70px 18px;text-align:center;background:radial-gradient(ellipse at top,#304a32 0%,#18251a 48%,#101711 100%);border-bottom:1px solid var(--border)}
+.hero .tag{color:var(--gold);letter-spacing:3px;font-size:12px}
+.hero h2{font-family:Georgia,serif;font-size:clamp(34px,6vw,60px);max-width:760px;margin:18px auto;line-height:1.1}
+.hero p{max-width:600px;margin:0 auto 25px;color:var(--muted);line-height:1.8}
+.hero button{background:var(--gold);color:#17140c;font-weight:bold;padding:14px 22px}
+main{max-width:1200px;margin:auto;padding:28px 16px}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:5px 0 35px}
+.stat{background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:18px 8px;text-align:center}
+.stat strong{display:block;color:var(--gold);font-size:27px;margin-bottom:7px}
+.stat span{font-size:12px;color:var(--muted)}
+.section-heading{font-family:Georgia,serif;font-size:30px;margin:0 0 8px}
+.subheading{color:var(--muted);margin:0 0 22px;line-height:1.6}
+.toolbar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:20px}
+select{background:var(--panel);color:var(--text)}
+#products{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:8px;overflow:hidden;transition:transform .2s,border-color .2s}
+.card:hover{transform:translateY(-3px);border-color:var(--gold)}
+.card img{display:block;width:100%;height:245px;object-fit:cover;background:#202a21}
+.details{padding:16px}
+.category-label{color:var(--gold);font-size:11px;text-transform:uppercase;letter-spacing:1.5px}
+.details h3{font-size:18px;margin:9px 0}
+.details p{color:var(--muted);font-size:14px;line-height:1.6;min-height:44px}
+.price{color:var(--gold);font-size:21px;font-weight:bold;margin:10px 0 14px}
+.details button{width:100%}
+.cart{margin-top:38px;background:var(--panel);border:1px solid var(--border);border-radius:9px;padding:20px}
+.cart h2{font-family:Georgia,serif}
+.cart-row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 0;border-bottom:1px solid var(--border)}
+.cart-row small{color:var(--muted)}
+.qty{white-space:nowrap}
+.qty button{padding:5px 10px}
+.total{text-align:right;font-size:23px;font-weight:bold;color:var(--gold);margin:22px 0}
+.checkout{width:100%;padding:14px;background:#1d7447;font-weight:bold}
+.note{font-size:12px;color:var(--muted);line-height:1.7}
+footer{background:#080c09;border-top:1px solid var(--gold);text-align:center;padding:27px 15px;color:var(--muted);font-size:13px;line-height:1.8}
+.empty{color:var(--muted);padding:22px 0}
+@media(max-width:560px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{padding:48px 16px}.card img{height:220px}nav{position:static}}
 </style>
 </head>
 <body>
-<div class="announcement">A LITTLE LUXURY, EVERY DAY · WELCOME TO OUR BOUTIQUE</div>
-<header class="header"><nav class="nav">
-<a class="brand" href="#home">MAISON <span>ÉLÉGANCE</span></a>
-<div class="navlinks"><a href="#home">Home</a><a href="#categories">Categories</a><a href="#shop">Shop</a><a href="#about">Our Story</a></div>
-<button class="cart-btn" onclick="openCart()">Bag (<span id="cart-count">0</span>)</button>
-</nav></header>
-<main id="home">
-<section class="hero"><div class="hero-inner">
-<div class="hero-copy"><div class="eyebrow">Style that feels like you</div><h1>Everyday beauty.<br>Effortless elegance.</h1><p>Discover beautiful finishing touches, feel-good beauty essentials and fashion pieces chosen to make every day feel special.</p><a class="btn" href="#shop" style="display:inline-block;margin-top:10px">EXPLORE THE COLLECTION</a></div>
-<div class="hero-image" role="img" aria-label="Women's fashion inspiration"></div>
-</div></section>
-<section class="section" id="categories"><div class="section-head"><div class="eyebrow">Find your favourites</div><h2>Shop by category</h2><p>Little details. Beautiful choices. Your kind of style.</p></div>
-<div class="categories"><a class="category cat1" href="#shop" onclick="setCategory('Jewelry')"><span>Jewelry & Accessories</span></a><a class="category cat2" href="#shop" onclick="setCategory('Beauty')"><span>Beauty & Body Care</span></a><a class="category cat3" href="#shop" onclick="setCategory('Clothing')"><span>Clothing</span></a><a class="category cat4" href="#shop" onclick="setCategory('Shoes')"><span>Shoes</span></a></div></section>
-<section class="section" id="shop"><div class="section-head"><div class="eyebrow">Curated for you</div><h2>The boutique edit</h2><p>Browse our sample collection. Replace these with your real products and prices.</p></div>
-<div class="toolbar"><span id="product-count">8 pieces to discover</span><select id="category-filter" aria-label="Filter products" onchange="renderProducts()"><option value="All">All categories</option><option value="Jewelry">Jewelry</option><option value="Beauty">Body care</option><option value="Clothing">Clothing</option><option value="Shoes">Shoes</option></select></div>
-<div class="products" id="products"></div></section>
-<section class="banner"><div class="eyebrow">The finishing touch</div><h2>Your style, your story.</h2><p>Thoughtful finds for your wardrobe, beauty shelf and jewellery box.</p><a class="btn" href="#shop" style="display:inline-block;margin-top:10px">SHOP THE EDIT</a></section>
-<section class="section about" id="about"><div class="about-art">Elegance, always.</div><div><div class="eyebrow">A note from us</div><h2>Beauty in the little things.</h2><p>Welcome to Queen's Closet: a place for lovely accessories, everyday beauty essentials and fashion pieces that help you express your personal style. We believe shopping should feel easy, inspiring and special.</p><p><strong>Have a question?</strong> Add your WhatsApp number in the website code to let customers reach you directly.</p></div></section>
+<header>
+<h1>QUEEN'S CLOSET</h1>
+<p>KENYAN FASHION • AFRICAN ELEGANCE • EVERYDAY STYLE</p>
+</header>
+
+<nav>
+<button class="active" data-category="All" onclick="filterProducts('All',this)">All Collections</button>
+<button data-category="Clothing" onclick="filterProducts('Clothing',this)">Clothes</button>
+<button data-category="Shoes" onclick="filterProducts('Shoes',this)">Shoes</button>
+<button data-category="Jewelry" onclick="filterProducts('Jewelry',this)">Jewellery</button>
+<button data-category="Beauty" onclick="filterProducts('Beauty',this)">Beauty</button>
+<button onclick="document.getElementById('cart').scrollIntoView({behavior:'smooth'})">🛍 Bag (<span id="bagCount">0</span>)</button>
+</nav>
+
+<section class="hero">
+<div class="tag">INSPIRED BY KENYA</div>
+<h2>Wear Your Culture.<br>Own Your Style.</h2>
+<p>Discover African-inspired fashion, beautiful beadwork, stylish shoes and beauty essentials at Queen's Closet.</p>
+<button onclick="document.getElementById('shop').scrollIntoView({behavior:'smooth'})">EXPLORE THE COLLECTION</button>
+</section>
+
+<main id="shop">
+<h2 class="section-heading">Our Boutique</h2>
+<p class="subheading">A fresh look at Kenyan fashion and modern African style.</p>
+
+<section class="stats" aria-label="Product counts">
+<div class="stat"><strong id="allCount">0</strong><span>ALL PRODUCTS</span></div>
+<div class="stat"><strong id="clothesCount">0</strong><span>CLOTHING ITEMS</span></div>
+<div class="stat"><strong id="shoesCount">0</strong><span>SHOES</span></div>
+<div class="stat"><strong id="jewelryCount">0</strong><span>JEWELLERY ITEMS</span></div>
+</section>
+
+<div class="toolbar">
+<h2 class="section-heading" id="collectionTitle">Featured Collection</h2>
+<select id="sort" onchange="renderProducts()">
+<option value="featured">Featured</option>
+<option value="low">Price: Low to High</option>
+<option value="high">Price: High to Low</option>
+</select>
+</div>
+<div id="products"></div>
+
+<section class="cart" id="cart">
+<h2>🛍 Your Shopping Bag</h2>
+<div id="cartItems" class="empty">Your bag is empty. Explore our collection to get started.</div>
+<div class="total" id="total">Total: KSh 0</div>
+<button class="checkout" onclick="checkout()">ORDER VIA WHATSAPP</button>
+<p class="note">Prices are displayed in Kenyan shillings (KSh). Contact us on WhatsApp to confirm availability, sizes, delivery fees and your order. This website does not collect card or M-Pesa payments.</p>
+</section>
 </main>
-<footer class="footer"><div class="footer-inner"><div><a class="brand" href="#home" style="color:white">MAISON <span>ÉLÉGANCE</span></a><p>Fashion and beauty, thoughtfully chosen.</p></div><div><strong>Customer care</strong><p>Orders & enquiries via WhatsApp</p><p class="small">Demo website · Add your real contact details before publishing.</p></div><div><strong>Explore</strong><p><a href="#categories">Categories</a> · <a href="#shop">Shop</a> · <a href="#about">Our story</a></p></div></div></footer>
-<div class="overlay" id="overlay" onclick="closeCart()"></div>
-<aside class="cart-panel" id="cart-panel" aria-label="Shopping cart"><div class="cart-top"><h2>Your shopping bag</h2><button class="close" onclick="closeCart()" aria-label="Close cart">×</button></div><div class="cart-items" id="cart-items"></div><div class="cart-bottom"><div class="total"><span>Subtotal</span><span id="cart-total">KSh 0</span></div><button class="checkout" onclick="checkout()">ORDER VIA WHATSAPP</button><p class="note">This demo sends your order to WhatsApp. Delivery fees and payment are arranged with the seller.</p></div></aside>
-<div class="toast" id="toast"></div>
+
+<footer>
+<strong style="color:var(--gold)">QUEEN'S CLOSET</strong><br>
+Kenyan fashion with an African touch.<br>
+© <span id="year"></span> Queen's Closet
+</footer>
+
 <script>
-const products = [
-{id:1,name:"Golden Glow Hoops",category:"Jewelry",price:850,desc:"Everyday gold-tone statement earrings.",image:"https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=700&q=80"},
-{id:2,name:"Pearl Detail Necklace",category:"Jewelry",price:1200,desc:"A delicate piece for special moments.",image:"https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=700&q=80"},
-{id:3,name:"Daily Glow Body Lotion",category:"Beauty",price:950,desc:"A moisturising beauty-shelf essential.",image:"https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=700&q=80"},
-{id:4,name:"Self-Care Gift Set",category:"Beauty",price:1800,desc:"A lovely treat for yourself or a friend.",image:"https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=700&q=80"},
-{id:5,name:"Classic Satin Blouse",category:"Clothing",price:2200,desc:"An elegant staple for day-to-evening looks.",image:"https://images.unsplash.com/photo-1551163943-3f6a855d1153?auto=format&fit=crop&w=700&q=80"},
-{id:6,name:"Chic Everyday Dress",category:"Clothing",price:3200,desc:"A versatile silhouette for your wardrobe.",image:"https://images.unsplash.com/photo-1539008835657-9e8e9680c956?auto=format&fit=crop&w=700&q=80"},
-{id:7,name:"Elegant Strappy Heels",category:"Shoes",price:2800,desc:"A refined finishing touch for going out.",image:"https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=700&q=80"},
-{id:8,name:"Minimal Everyday Flats",category:"Shoes",price:1900,desc:"Easy-to-style comfort for busy days.",image:"https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=700&q=80"}
+// Replace these demonstration products with your real stock and prices.
+const products=[
+{id:1,name:"Kitenge Statement Dress",category:"Clothing",price:2800,description:"A colourful African-print dress for occasions and outings.",image:"https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=700&q=80"},
+{id:2,name:"Ankara Two-Piece Outfit",category:"Clothing",price:3500,description:"A coordinated print-inspired outfit with a bold look.",image:"https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=700&q=80"},
+{id:3,name:"African Print Shirt",category:"Clothing",price:1800,description:"A smart statement shirt inspired by African prints.",image:"https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=700&q=80"},
+{id:4,name:"Maasai-Inspired Beaded Necklace",category:"Jewelry",price:1200,description:"A colourful beadwork-inspired accessory.",image:"https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=700&q=80"},
+{id:5,name:"African Beaded Bracelet Set",category:"Jewelry",price:650,description:"Bright, colourful bracelets to complement your outfit.",image:"https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=700&q=80"},
+{id:6,name:"Gold-Tone Statement Earrings",category:"Jewelry",price:750,description:"Bold accessories for everyday wear or special occasions.",image:"https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=700&q=80"},
+{id:7,name:"Ladies Leather Sandals",category:"Shoes",price:1600,description:"Easy-to-style sandals for everyday wear.",image:"https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=700&q=80"},
+{id:8,name:"Classic Ladies Heels",category:"Shoes",price:2800,description:"Elegant heels for events, work and celebrations.",image:"https://images.unsplash.com/photo-1515347619252-60a4bf4fff4f?auto=format&fit=crop&w=700&q=80"},
+{id:9,name:"Everyday Fashion Sneakers",category:"Shoes",price:2400,description:"A versatile casual shoe for your everyday outfits.",image:"https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80"},
+{id:10,name:"Moisturising Body Lotion",category:"Beauty",price:650,description:"A body-care essential for your daily routine.",image:"https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=700&q=80"},
+{id:11,name:"Signature Fragrance",category:"Beauty",price:1800,description:"A fragrance to complete your personal style.",image:"https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=700&q=80"},
+{id:12,name:"Everyday Style Handbag",category:"Clothing",price:2200,description:"A practical accessory for work, shopping and outings.",image:"https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=700&q=80"}
 ];
-let cart = [];
-const money = n => "KSh " + n.toLocaleString("en-KE");
-function renderProducts(){const filter=document.getElementById('category-filter').value;const list=products.filter(p=>filter==='All'||p.category===filter);document.getElementById('product-count').textContent=list.length+' pieces to discover';document.getElementById('products').innerHTML=list.map(p=>`<article class="product"><img src="${p.image}" alt="${p.name}" loading="lazy" onerror="this.style.display='none'"><div class="tag">${p.category}</div><h3>${p.name}</h3><div class="desc">${p.desc}</div><div class="price-row"><span class="price">${money(p.price)}</span><button class="add" onclick="addToCart(${p.id})">ADD +</button></div></article>`).join('')}
-function setCategory(cat){document.getElementById('category-filter').value=cat;renderProducts()}
-function addToCart(id){const found=cart.find(i=>i.id===id);if(found)found.qty++;else cart.push({id,qty:1});renderCart();showToast('Added to your bag');}
-function renderCart(){document.getElementById('cart-count').textContent=cart.reduce((s,i)=>s+i.qty,0);document.getElementById('cart-total').textContent=money(cart.reduce((s,i)=>s+products.find(p=>p.id===i.id).price*i.qty,0));const el=document.getElementById('cart-items');if(!cart.length){el.innerHTML='<p class="empty">Your bag is waiting for something lovely.</p>';return}el.innerHTML=cart.map(i=>{const p=products.find(p=>p.id===i.id);return `<div class="cart-item"><div><strong>${p.name}</strong><small>${money(p.price)} each</small><div class="qty"><button onclick="changeQty(${i.id},-1)">−</button><span>${i.qty}</span><button onclick="changeQty(${i.id},1)">+</button></div></div><strong>${money(p.price*i.qty)}</strong></div>`}).join('')}
-function changeQty(id,delta){const item=cart.find(i=>i.id===id);if(!item)return;item.qty+=delta;if(item.qty<=0)cart=cart.filter(i=>i.id!==id);renderCart()}
-function openCart(){document.getElementById('cart-panel').classList.add('open');document.getElementById('overlay').classList.add('show')}
-function closeCart(){document.getElementById('cart-panel').classList.remove('open');document.getElementById('overlay').classList.remove('show')}
-function checkout(){if(!cart.length){showToast('Add a product to your bag first');return}const phone='2547XXXXXXXX';if(phone.includes('X')){alert('Before taking real orders, edit the phone number in index.html: find 2547XXXXXXXX and replace it with your WhatsApp number, including country code 254.');return}const lines=cart.map(i=>{const p=products.find(p=>p.id===i.id);return `${i.qty} x ${p.name} — ${money(p.price*i.qty)}`});const total=cart.reduce((s,i)=>s+products.find(p=>p.id===i.id).price*i.qty,0);const message=`Hello! I'd like to order:\n${lines.join('\n')}\nSubtotal: ${money(total)}\nPlease confirm availability, delivery fee and payment options.`;window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`,'_blank')}
-function showToast(msg){const t=document.getElementById('toast');t.textContent=msg;t.style.display='block';setTimeout(()=>t.style.display='none',1800)}
-renderProducts();renderCart();
+
+// Replace with your Kenyan WhatsApp number, digits only, e.g. 2547XXXXXXXX.
+const WHATSAPP_NUMBER="2547XXXXXXXX";
+let currentCategory="All";
+let cart={};
+
+function money(value){return "KSh "+value.toLocaleString("en-KE");}
+
+function renderCounts(){
+ document.getElementById("allCount").textContent=products.length;
+ document.getElementById("clothesCount").textContent=products.filter(p=>p.category==="Clothing").length;
+ document.getElementById("shoesCount").textContent=products.filter(p=>p.category==="Shoes").length;
+ document.getElementById("jewelryCount").textContent=products.filter(p=>p.category==="Jewelry").length;
+ document.getElementById("bagCount").textContent=Object.values(cart).reduce((a,b)=>a+b,0);
+}
+
+function renderProducts(){
+ const container=document.getElementById("products");
+ let list=products.filter(p=>currentCategory==="All"||p.category===currentCategory);
+ const sort=document.getElementById("sort").value;
+ if(sort==="low")list.sort((a,b)=>a.price-b.price);
+ if(sort==="high")list.sort((a,b)=>b.price-a.price);
+ document.getElementById("collectionTitle").textContent=currentCategory==="All"?"Featured Collection":currentCategory+" Collection";
+ if(!list.length){container.innerHTML='<p class="empty">No products in this collection yet.</p>';return;}
+ container.innerHTML=list.map(p=>`
+ <article class="card">
+ <img src="${p.image}" alt="${p.name}" loading="lazy" onerror="this.style.visibility='hidden'">
+ <div class="details">
+ <span class="category-label">${p.category}</span>
+ <h3>${p.name}</h3>
+ <div class="price">${money(p.price)}</div>
+ <p>${p.description}</p>
+ <button onclick="addToCart(${p.id})">Add to Bag</button>
+ </div></article>`).join("");
+}
+
+function filterProducts(category,button){
+ currentCategory=category;
+ document.querySelectorAll("nav button[data-category]").forEach(b=>b.classList.toggle("active",b===button));
+ renderProducts();
+}
+
+function addToCart(id){
+ cart[id]=(cart[id]||0)+1;
+ renderCart();
+}
+
+function changeQty(id,delta){
+ cart[id]=(cart[id]||0)+delta;
+ if(cart[id]<=0)delete cart[id];
+ renderCart();
+}
+
+function renderCart(){
+ const container=document.getElementById("cartItems");
+ const ids=Object.keys(cart);
+ if(!ids.length){
+ container.className="empty";
+ container.textContent="Your bag is empty. Explore our collection to get started.";
+ }else{
+ container.className="";
+ container.innerHTML=ids.map(id=>{
+ const p=products.find(x=>x.id===Number(id));
+ return `<div class="cart-row">
+ <div><strong>${p.name}</strong><br><small>${money(p.price)} each</small></div>
+ <div class="qty"><button onclick="changeQty(${id},-1)">−</button> ${cart[id]} <button onclick="changeQty(${id},1)">+</button></div>
+ </div>`;
+ }).join("");
+ }
+ const total=ids.reduce((sum,id)=>sum+products.find(p=>p.id===Number(id)).price*cart[id],0);
+ document.getElementById("total").textContent="Total: "+money(total);
+ renderCounts();
+}
+
+function checkout(){
+ const ids=Object.keys(cart);
+ if(!ids.length){alert("Please add a product to your bag first.");return;}
+ if(WHATSAPP_NUMBER.includes("X")||!/^254\d{9}$/.test(WHATSAPP_NUMBER)){
+ alert("The shop owner needs to add a valid Kenyan WhatsApp number to the code first.");return;
+ }
+ let message="Hello Queen's Closet! I would like to place an order:\n";
+ ids.forEach(id=>{
+ const p=products.find(x=>x.id===Number(id));
+ message+=`- ${p.name} x ${cart[id]} = ${money(p.price*cart[id])}\n`;
+ });
+ const total=ids.reduce((sum,id)=>sum+products.find(p=>p.id===Number(id)).price*cart[id],0);
+ message+="Total: "+money(total)+"\nPlease confirm availability and delivery.";
+ window.open("https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(message),"_blank");
+}
+
+document.getElementById("year").textContent=new Date().getFullYear();
+renderProducts();
+renderCounts();
+renderCart();
 </script>
 </body>
 </html>
