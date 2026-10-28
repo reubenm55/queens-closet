@@ -1,170 +1,208 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#101711">
-<title>Queen's Closet | Kenyan Fashion</title>
+<title>Queen's Closet | Kenyan Fashion & Beauty</title>
 <style>
-:root{--bg:#101711;--panel:#1b241d;--panel2:#232e25;--gold:#d8ad59;--green:#24583d;--text:#f2eadb;--muted:#b9b5a8;--border:#39463a}
+:root{--bg:#101711;--panel:#1b241d;--gold:#d8ad59;--green:#24583d;--text:#f2eadb;--muted:#b9b5a8;--border:#39463a}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,sans-serif}
-header{background:#080c09;border-bottom:1px solid var(--gold);padding:24px 15px;text-align:center}
-header h1{color:var(--gold);letter-spacing:4px;margin:0;font-family:Georgia,serif;font-size:clamp(27px,5vw,42px)}
-header p{color:var(--muted);letter-spacing:2px;margin:10px 0 0;font-size:12px}
-nav{display:flex;justify-content:center;gap:9px;flex-wrap:wrap;padding:16px;background:#141d16;position:sticky;top:0;z-index:5;border-bottom:1px solid var(--border)}
-button,select{font:inherit;border:1px solid var(--gold);border-radius:5px;padding:10px 13px;cursor:pointer}
+header{text-align:center;padding:25px 12px;background:#080c09;border-bottom:1px solid var(--gold)}
+header h1{margin:0;color:var(--gold);font-family:Georgia,serif;letter-spacing:4px;font-size:clamp(27px,5vw,42px)}
+header p{color:var(--muted);font-size:12px;letter-spacing:2px}
+nav{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;padding:14px;background:#141d16;border-bottom:1px solid var(--border)}
+button,select{font:inherit;border:1px solid var(--gold);border-radius:5px;padding:10px 12px;cursor:pointer}
 button{background:var(--green);color:var(--text)}
-button:hover{background:#326b4b}
+button:hover{filter:brightness(1.2)}
 nav button{background:#202a21}
 nav button.active{background:var(--gold);color:#17140c}
-.hero{padding:70px 18px;text-align:center;background:radial-gradient(ellipse at top,#304a32 0%,#18251a 48%,#101711 100%);border-bottom:1px solid var(--border)}
+.hero{text-align:center;padding:65px 18px;background:radial-gradient(ellipse at top,#304a32,#18251a 55%,#101711)}
 .hero .tag{color:var(--gold);letter-spacing:3px;font-size:12px}
-.hero h2{font-family:Georgia,serif;font-size:clamp(34px,6vw,60px);max-width:760px;margin:18px auto;line-height:1.1}
-.hero p{max-width:600px;margin:0 auto 25px;color:var(--muted);line-height:1.8}
-.hero button{background:var(--gold);color:#17140c;font-weight:bold;padding:14px 22px}
+.hero h2{font-family:Georgia,serif;font-size:clamp(34px,6vw,58px);line-height:1.12;margin:18px auto;max-width:750px}
+.hero p{color:var(--muted);line-height:1.8;max-width:600px;margin:0 auto 24px}
+.hero button{background:var(--gold);color:#17140c;font-weight:bold;padding:13px 20px}
 main{max-width:1200px;margin:auto;padding:28px 16px}
-.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:5px 0 35px}
-.stat{background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:18px 8px;text-align:center}
-.stat strong{display:block;color:var(--gold);font-size:27px;margin-bottom:7px}
-.stat span{font-size:12px;color:var(--muted)}
-.section-heading{font-family:Georgia,serif;font-size:30px;margin:0 0 8px}
-.subheading{color:var(--muted);margin:0 0 22px;line-height:1.6}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:20px 0 35px}
+.stat{background:var(--panel);border:1px solid var(--border);border-radius:7px;padding:16px 6px;text-align:center}
+.stat strong{display:block;color:var(--gold);font-size:25px;margin-bottom:7px}
+.stat span{font-size:11px;color:var(--muted)}
+.heading{font-family:Georgia,serif;font-size:29px;margin:0 0 8px}
+.subheading{color:var(--muted);line-height:1.6;margin-bottom:22px}
 .toolbar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:20px}
 select{background:var(--panel);color:var(--text)}
-#products{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
-.card{background:var(--panel);border:1px solid var(--border);border-radius:8px;overflow:hidden;transition:transform .2s,border-color .2s}
-.card:hover{transform:translateY(-3px);border-color:var(--gold)}
-.card img{display:block;width:100%;height:245px;object-fit:cover;background:#202a21}
-.details{padding:16px}
-.category-label{color:var(--gold);font-size:11px;text-transform:uppercase;letter-spacing:1.5px}
-.details h3{font-size:18px;margin:9px 0}
-.details p{color:var(--muted);font-size:14px;line-height:1.6;min-height:44px}
-.price{color:var(--gold);font-size:21px;font-weight:bold;margin:10px 0 14px}
+#products{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:17px}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:8px;overflow:hidden}
+.card img{width:100%;height:225px;object-fit:cover;display:block;background:#202a21}
+.details{padding:15px}
+.category-label{font-size:11px;color:var(--gold);letter-spacing:1.5px;text-transform:uppercase}
+.details h3{font-size:17px;margin:9px 0}
+.details p{font-size:13px;line-height:1.6;color:var(--muted);min-height:40px}
+.price{color:var(--gold);font-weight:bold;font-size:20px;margin:12px 0}
 .details button{width:100%}
-.cart{margin-top:38px;background:var(--panel);border:1px solid var(--border);border-radius:9px;padding:20px}
+.cart{margin-top:35px;padding:20px;background:var(--panel);border:1px solid var(--border);border-radius:9px}
 .cart h2{font-family:Georgia,serif}
-.cart-row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 0;border-bottom:1px solid var(--border)}
+.cart-row{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:13px 0;border-bottom:1px solid var(--border)}
 .cart-row small{color:var(--muted)}
 .qty{white-space:nowrap}
 .qty button{padding:5px 10px}
-.total{text-align:right;font-size:23px;font-weight:bold;color:var(--gold);margin:22px 0}
+.total{text-align:right;color:var(--gold);font-size:22px;font-weight:bold;margin:22px 0}
 .checkout{width:100%;padding:14px;background:#1d7447;font-weight:bold}
-.note{font-size:12px;color:var(--muted);line-height:1.7}
-footer{background:#080c09;border-top:1px solid var(--gold);text-align:center;padding:27px 15px;color:var(--muted);font-size:13px;line-height:1.8}
-.empty{color:var(--muted);padding:22px 0}
-@media(max-width:560px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{padding:48px 16px}.card img{height:220px}nav{position:static}}
+.note,.empty{color:var(--muted);font-size:13px;line-height:1.7}
+footer{background:#080c09;border-top:1px solid var(--gold);text-align:center;padding:25px 12px;color:var(--muted);line-height:1.8;font-size:13px}
+@media(max-width:500px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{padding:45px 14px}.card img{height:210px}}
 </style>
 </head>
 <body>
+
 <header>
 <h1>QUEEN'S CLOSET</h1>
-<p>KENYAN FASHION • AFRICAN ELEGANCE • EVERYDAY STYLE</p>
+<p>KENYAN FASHION • AFRICAN ELEGANCE • BEAUTY</p>
 </header>
 
-<nav>
-<button class="active" data-category="All" onclick="filterProducts('All',this)">All Collections</button>
+<nav id="navigation">
+<button class="active" data-category="All" onclick="filterProducts('All',this)">All Products</button>
 <button data-category="Clothing" onclick="filterProducts('Clothing',this)">Clothes</button>
 <button data-category="Shoes" onclick="filterProducts('Shoes',this)">Shoes</button>
 <button data-category="Jewelry" onclick="filterProducts('Jewelry',this)">Jewellery</button>
-<button data-category="Beauty" onclick="filterProducts('Beauty',this)">Beauty</button>
+<button data-category="Beauty" onclick="filterProducts('Beauty',this)">Body Lotions</button>
+<button data-category="Perfumes" onclick="filterProducts('Perfumes',this)">Perfumes</button>
+<button data-category="Watches" onclick="filterProducts('Watches',this)">Women's Watches</button>
 <button onclick="document.getElementById('cart').scrollIntoView({behavior:'smooth'})">🛍 Bag (<span id="bagCount">0</span>)</button>
 </nav>
 
 <section class="hero">
 <div class="tag">INSPIRED BY KENYA</div>
 <h2>Wear Your Culture.<br>Own Your Style.</h2>
-<p>Discover African-inspired fashion, beautiful beadwork, stylish shoes and beauty essentials at Queen's Closet.</p>
-<button onclick="document.getElementById('shop').scrollIntoView({behavior:'smooth'})">EXPLORE THE COLLECTION</button>
+<p>Discover African-inspired fashion, affordable shoes, beautiful jewellery, fragrances and body-care essentials.</p>
+<button onclick="document.getElementById('shop').scrollIntoView({behavior:'smooth'})">SHOP THE COLLECTION</button>
 </section>
 
 <main id="shop">
-<h2 class="section-heading">Our Boutique</h2>
-<p class="subheading">A fresh look at Kenyan fashion and modern African style.</p>
+<h2 class="heading">Our Boutique</h2>
+<p class="subheading">Find your style at Queen's Closet. Prices are shown in Kenyan shillings.</p>
 
-<section class="stats" aria-label="Product counts">
+<section class="stats">
 <div class="stat"><strong id="allCount">0</strong><span>ALL PRODUCTS</span></div>
 <div class="stat"><strong id="clothesCount">0</strong><span>CLOTHING ITEMS</span></div>
 <div class="stat"><strong id="shoesCount">0</strong><span>SHOES</span></div>
 <div class="stat"><strong id="jewelryCount">0</strong><span>JEWELLERY ITEMS</span></div>
+<div class="stat"><strong id="beautyCount">0</strong><span>BODY LOTIONS</span></div>
+<div class="stat"><strong id="perfumesCount">0</strong><span>PERFUMES</span></div>
+<div class="stat"><strong id="watchesCount">0</strong><span>WOMEN'S WATCHES</span></div>
 </section>
 
 <div class="toolbar">
-<h2 class="section-heading" id="collectionTitle">Featured Collection</h2>
+<h2 class="heading" id="collectionTitle">Featured Collection</h2>
 <select id="sort" onchange="renderProducts()">
 <option value="featured">Featured</option>
 <option value="low">Price: Low to High</option>
 <option value="high">Price: High to Low</option>
 </select>
 </div>
+
 <div id="products"></div>
 
 <section class="cart" id="cart">
 <h2>🛍 Your Shopping Bag</h2>
-<div id="cartItems" class="empty">Your bag is empty. Explore our collection to get started.</div>
+<div id="cartItems" class="empty">Your bag is empty. Choose a product to get started.</div>
 <div class="total" id="total">Total: KSh 0</div>
 <button class="checkout" onclick="checkout()">ORDER VIA WHATSAPP</button>
-<p class="note">Prices are displayed in Kenyan shillings (KSh). Contact us on WhatsApp to confirm availability, sizes, delivery fees and your order. This website does not collect card or M-Pesa payments.</p>
+<p class="note">Orders are sent to WhatsApp for confirmation. Confirm product availability, sizes, fragrance, brand and delivery charges with the shop before payment. This website does not collect online payments.</p>
 </section>
 </main>
 
 <footer>
 <strong style="color:var(--gold)">QUEEN'S CLOSET</strong><br>
 Kenyan fashion with an African touch.<br>
+WhatsApp: 0724670722<br>
 © <span id="year"></span> Queen's Closet
 </footer>
 
 <script>
-// Replace these demonstration products with your real stock and prices.
-const products=[
-{id:1,name:"Kitenge Statement Dress",category:"Clothing",price:2800,description:"A colourful African-print dress for occasions and outings.",image:"https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=700&q=80"},
-{id:2,name:"Ankara Two-Piece Outfit",category:"Clothing",price:3500,description:"A coordinated print-inspired outfit with a bold look.",image:"https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=700&q=80"},
-{id:3,name:"African Print Shirt",category:"Clothing",price:1800,description:"A smart statement shirt inspired by African prints.",image:"https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=700&q=80"},
-{id:4,name:"Maasai-Inspired Beaded Necklace",category:"Jewelry",price:1200,description:"A colourful beadwork-inspired accessory.",image:"https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=700&q=80"},
-{id:5,name:"African Beaded Bracelet Set",category:"Jewelry",price:650,description:"Bright, colourful bracelets to complement your outfit.",image:"https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=700&q=80"},
-{id:6,name:"Gold-Tone Statement Earrings",category:"Jewelry",price:750,description:"Bold accessories for everyday wear or special occasions.",image:"https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=700&q=80"},
-{id:7,name:"Ladies Leather Sandals",category:"Shoes",price:1600,description:"Easy-to-style sandals for everyday wear.",image:"https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=700&q=80"},
-{id:8,name:"Classic Ladies Heels",category:"Shoes",price:2800,description:"Elegant heels for events, work and celebrations.",image:"https://images.unsplash.com/photo-1515347619252-60a4bf4fff4f?auto=format&fit=crop&w=700&q=80"},
-{id:9,name:"Everyday Fashion Sneakers",category:"Shoes",price:2400,description:"A versatile casual shoe for your everyday outfits.",image:"https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80"},
-{id:10,name:"Moisturising Body Lotion",category:"Beauty",price:650,description:"A body-care essential for your daily routine.",image:"https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=700&q=80"},
-{id:11,name:"Signature Fragrance",category:"Beauty",price:1800,description:"A fragrance to complete your personal style.",image:"https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=700&q=80"},
-{id:12,name:"Everyday Style Handbag",category:"Clothing",price:2200,description:"A practical accessory for work, shopping and outings.",image:"https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=700&q=80"}
+// Sample catalogue: replace demo prices with your real selling prices.
+const products = [
+{id:1,name:"Nice & Lovely Body Lotion",category:"Beauty",price:250,description:"Affordable everyday moisturising lotion.",image:"https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=600&q=80"},
+{id:2,name:"Vaseline Cocoa Glow Lotion",category:"Beauty",price:550,description:"Daily moisturising body-care option.",image:"https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=600&q=80"},
+{id:3,name:"Nivea Body Lotion",category:"Beauty",price:550,description:"Body lotion for everyday skin care.",image:"https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=600&q=80"},
+{id:4,name:"Amara Body Lotion",category:"Beauty",price:300,description:"Budget-friendly body lotion option.",image:"https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=600&q=80"},
+{id:5,name:"Dove Body Lotion",category:"Beauty",price:750,description:"Daily body-care moisturiser.",image:"https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=600&q=80"},
+{id:6,name:"Zoe Body Lotion",category:"Beauty",price:300,description:"Affordable lotion option.",image:"https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=600&q=80"},
+{id:7,name:"Clere Body Lotion",category:"Beauty",price:250,description:"Everyday body moisturiser.",image:"https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=600&q=80"},
+{id:8,name:"Palmer's Cocoa Butter Lotion",category:"Beauty",price:900,description:"Cocoa butter body-care option.",image:"https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=600&q=80"},
+{id:9,name:"Aveeno Daily Moisturising Lotion",category:"Beauty",price:2750,description:"Premium daily moisturiser.",image:"https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=600&q=80"},
+{id:10,name:"Jergens Body Lotion",category:"Beauty",price:1500,description:"Body lotion for everyday use.",image:"https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=600&q=80"},
+
+{id:11,name:"Pocket Perfume",category:"Perfumes",price:250,description:"Budget-friendly fragrance option; confirm brand and size.",image:"https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=600&q=80"},
+{id:12,name:"Women's Fragrance Mist",category:"Perfumes",price:450,description:"Light fragrance for everyday wear.",image:"https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=600&q=80"},
+{id:13,name:"Lattafa Yara Perfume",category:"Perfumes",price:2500,description:"Popular fragrance listing; verify exact size and authenticity.",image:"https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=600&q=80"},
+{id:14,name:"Arabian-Style Fragrance",category:"Perfumes",price:1200,description:"Warm fragrance style; exact brand to be confirmed.",image:"https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=600&q=80"},
+{id:15,name:"Designer Perfume",category:"Perfumes",price:5000,description:"Demo listing only; confirm the brand, size and authenticity.",image:"https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=600&q=80"},
+
+{id:16,name:"Ladies Everyday Watch",category:"Watches",price:650,description:"Simple affordable everyday watch.",image:"https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80"},
+{id:17,name:"Gold-Tone Ladies Watch",category:"Watches",price:950,description:"Gold-tone accessory for dressy outfits.",image:"https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=600&q=80"},
+{id:18,name:"Elegant Women's Wristwatch",category:"Watches",price:1500,description:"Classic watch for daily and occasion wear.",image:"https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=600&q=80"},
+{id:19,name:"Premium Style Ladies Watch",category:"Watches",price:2500,description:"Smart accessory for a polished look.",image:"https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=600&q=80"},
+
+{id:20,name:"Budget Ladies Flat Sandals",category:"Shoes",price:350,description:"Low-cost casual sandals; confirm available sizes.",image:"https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=600&q=80"},
+{id:21,name:"Ladies Open Sandals",category:"Shoes",price:500,description:"Everyday sandals for casual outfits.",image:"https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=600&q=80"},
+{id:22,name:"Ladies Slip-On Shoes",category:"Shoes",price:750,description:"Casual shoes for daily wear.",image:"https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=600&q=80"},
+{id:23,name:"Ladies Ballet Flats",category:"Shoes",price:900,description:"Simple flats for everyday outfits.",image:"https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=600&q=80"},
+{id:24,name:"Fashion Sneakers",category:"Shoes",price:1500,description:"Casual trainers for everyday styling.",image:"https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80"},
+{id:25,name:"Classic Ladies Heels",category:"Shoes",price:1800,description:"Dress shoes for events and occasions.",image:"https://images.unsplash.com/photo-1515347619252-60a4bf4fff4f?auto=format&fit=crop&w=600&q=80"},
+{id:26,name:"Ladies Flat Slip-On Sandals",category:"Shoes",price:450,description:"Affordable casual sandal style.",image:"https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=600&q=80"},
+
+{id:27,name:"Kitenge Statement Dress",category:"Clothing",price:1800,description:"African-print-inspired style for outings.",image:"https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=600&q=80"},
+{id:28,name:"Ankara Two-Piece Outfit",category:"Clothing",price:2500,description:"Bold print-inspired matching outfit.",image:"https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"},
+{id:29,name:"African Print Shirt",category:"Clothing",price:1200,description:"A statement piece inspired by African prints.",image:"https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=600&q=80"},
+{id:30,name:"Everyday Fashion Handbag",category:"Clothing",price:1200,description:"A practical accessory for daily use.",image:"https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=600&q=80"},
+
+{id:31,name:"African Beaded Necklace",category:"Jewelry",price:450,description:"Colourful beadwork-inspired accessory.",image:"https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=600&q=80"},
+{id:32,name:"Beaded Bracelet Set",category:"Jewelry",price:250,description:"Colourful bracelets to complement your look.",image:"https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=600&q=80"},
+{id:33,name:"Statement Earrings",category:"Jewelry",price:350,description:"Bold accessory for everyday and occasion wear.",image:"https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=80"}
 ];
 
-// Replace with your Kenyan WhatsApp number, digits only, e.g. 2547XXXXXXXX.
-const WHATSAPP_NUMBER="2547XXXXXXXX";
+// Kenya international format: 254 + 724670722
+const WHATSAPP_NUMBER = "254724670722";
+
 let currentCategory="All";
 let cart={};
 
-function money(value){return "KSh "+value.toLocaleString("en-KE");}
+function money(n){return "KSh "+n.toLocaleString("en-KE");}
 
 function renderCounts(){
  document.getElementById("allCount").textContent=products.length;
  document.getElementById("clothesCount").textContent=products.filter(p=>p.category==="Clothing").length;
  document.getElementById("shoesCount").textContent=products.filter(p=>p.category==="Shoes").length;
  document.getElementById("jewelryCount").textContent=products.filter(p=>p.category==="Jewelry").length;
+ document.getElementById("beautyCount").textContent=products.filter(p=>p.category==="Beauty").length;
+ document.getElementById("perfumesCount").textContent=products.filter(p=>p.category==="Perfumes").length;
+ document.getElementById("watchesCount").textContent=products.filter(p=>p.category==="Watches").length;
  document.getElementById("bagCount").textContent=Object.values(cart).reduce((a,b)=>a+b,0);
 }
 
 function renderProducts(){
- const container=document.getElementById("products");
+ const el=document.getElementById("products");
  let list=products.filter(p=>currentCategory==="All"||p.category===currentCategory);
  const sort=document.getElementById("sort").value;
  if(sort==="low")list.sort((a,b)=>a.price-b.price);
  if(sort==="high")list.sort((a,b)=>b.price-a.price);
  document.getElementById("collectionTitle").textContent=currentCategory==="All"?"Featured Collection":currentCategory+" Collection";
- if(!list.length){container.innerHTML='<p class="empty">No products in this collection yet.</p>';return;}
- container.innerHTML=list.map(p=>`
+ if(!list.length){el.innerHTML='<p class="empty">No products in this collection yet.</p>';return;}
+ el.innerHTML=list.map(p=>`
  <article class="card">
- <img src="${p.image}" alt="${p.name}" loading="lazy" onerror="this.style.visibility='hidden'">
+ <img src="${p.image}" alt="${p.name}" loading="lazy" onerror="this.style.display='none'">
  <div class="details">
  <span class="category-label">${p.category}</span>
  <h3>${p.name}</h3>
  <div class="price">${money(p.price)}</div>
  <p>${p.description}</p>
  <button onclick="addToCart(${p.id})">Add to Bag</button>
- </div></article>`).join("");
+ </div>
+ </article>`).join("");
 }
 
 function filterProducts(category,button){
@@ -185,14 +223,14 @@ function changeQty(id,delta){
 }
 
 function renderCart(){
- const container=document.getElementById("cartItems");
+ const el=document.getElementById("cartItems");
  const ids=Object.keys(cart);
  if(!ids.length){
- container.className="empty";
- container.textContent="Your bag is empty. Explore our collection to get started.";
+ el.className="empty";
+ el.textContent="Your bag is empty. Choose a product to get started.";
  }else{
- container.className="";
- container.innerHTML=ids.map(id=>{
+ el.className="";
+ el.innerHTML=ids.map(id=>{
  const p=products.find(x=>x.id===Number(id));
  return `<div class="cart-row">
  <div><strong>${p.name}</strong><br><small>${money(p.price)} each</small></div>
@@ -208,16 +246,13 @@ function renderCart(){
 function checkout(){
  const ids=Object.keys(cart);
  if(!ids.length){alert("Please add a product to your bag first.");return;}
- if(WHATSAPP_NUMBER.includes("X")||!/^254\d{9}$/.test(WHATSAPP_NUMBER)){
- alert("The shop owner needs to add a valid Kenyan WhatsApp number to the code first.");return;
- }
- let message="Hello Queen's Closet! I would like to place an order:\n";
+ let message="Hello Queen's Closet! I would like to order:\n";
  ids.forEach(id=>{
  const p=products.find(x=>x.id===Number(id));
- message+=`- ${p.name} x ${cart[id]} = ${money(p.price*cart[id])}\n`;
+ message+="- "+p.name+" x "+cart[id]+" = "+money(p.price*cart[id])+"\n";
  });
  const total=ids.reduce((sum,id)=>sum+products.find(p=>p.id===Number(id)).price*cart[id],0);
- message+="Total: "+money(total)+"\nPlease confirm availability and delivery.";
+ message+="Total: "+money(total)+"\nPlease confirm availability, sizes and delivery.";
  window.open("https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(message),"_blank");
 }
 
