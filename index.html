@@ -124,46 +124,211 @@ WhatsApp: 0724670722<br>
 
 <script>
 // Sample catalogue: replace demo prices with your real selling prices.
-const products = [
-{id:1,name:"Nice & Lovely Body Lotion",category:"Beauty",price:250,description:"Affordable everyday moisturising lotion.",image:"https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=600&q=80"},
-{id:2,name:"Vaseline Cocoa Glow Lotion",category:"Beauty",price:550,description:"Daily moisturising body-care option.",image:"https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=600&q=80"},
-{id:3,name:"Nivea Body Lotion",category:"Beauty",price:550,description:"Body lotion for everyday skin care.",image:"https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=600&q=80"},
-{id:4,name:"Amara Body Lotion",category:"Beauty",price:300,description:"Budget-friendly body lotion option.",image:"https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=600&q=80"},
-{id:5,name:"Dove Body Lotion",category:"Beauty",price:750,description:"Daily body-care moisturiser.",image:"https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=600&q=80"},
-{id:6,name:"Zoe Body Lotion",category:"Beauty",price:300,description:"Affordable lotion option.",image:"https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=600&q=80"},
-{id:7,name:"Clere Body Lotion",category:"Beauty",price:250,description:"Everyday body moisturiser.",image:"https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=600&q=80"},
-{id:8,name:"Palmer's Cocoa Butter Lotion",category:"Beauty",price:900,description:"Cocoa butter body-care option.",image:"https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=600&q=80"},
-{id:9,name:"Aveeno Daily Moisturising Lotion",category:"Beauty",price:2750,description:"Premium daily moisturiser.",image:"https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=600&q=80"},
-{id:10,name:"Jergens Body Lotion",category:"Beauty",price:1500,description:"Body lotion for everyday use.",image:"https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=600&q=80"},
 
-{id:11,name:"Pocket Perfume",category:"Perfumes",price:250,description:"Budget-friendly fragrance option; confirm brand and size.",image:"https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=600&q=80"},
-{id:12,name:"Women's Fragrance Mist",category:"Perfumes",price:450,description:"Light fragrance for everyday wear.",image:"https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=600&q=80"},
-{id:13,name:"Lattafa Yara Perfume",category:"Perfumes",price:2500,description:"Popular fragrance listing; verify exact size and authenticity.",image:"https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=600&q=80"},
-{id:14,name:"Arabian-Style Fragrance",category:"Perfumes",price:1200,description:"Warm fragrance style; exact brand to be confirmed.",image:"https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=600&q=80"},
-{id:15,name:"Designer Perfume",category:"Perfumes",price:5000,description:"Demo listing only; confirm the brand, size and authenticity.",image:"https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=600&q=80"},
-
-{id:16,name:"Ladies Everyday Watch",category:"Watches",price:650,description:"Simple affordable everyday watch.",image:"https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80"},
-{id:17,name:"Gold-Tone Ladies Watch",category:"Watches",price:950,description:"Gold-tone accessory for dressy outfits.",image:"https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=600&q=80"},
-{id:18,name:"Elegant Women's Wristwatch",category:"Watches",price:1500,description:"Classic watch for daily and occasion wear.",image:"https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=600&q=80"},
-{id:19,name:"Premium Style Ladies Watch",category:"Watches",price:2500,description:"Smart accessory for a polished look.",image:"https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=600&q=80"},
-
-{id:20,name:"Budget Ladies Flat Sandals",category:"Shoes",price:350,description:"Low-cost casual sandals; confirm available sizes.",image:"https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=600&q=80"},
-{id:21,name:"Ladies Open Sandals",category:"Shoes",price:500,description:"Everyday sandals for casual outfits.",image:"https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=600&q=80"},
-{id:22,name:"Ladies Slip-On Shoes",category:"Shoes",price:750,description:"Casual shoes for daily wear.",image:"https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=600&q=80"},
-{id:23,name:"Ladies Ballet Flats",category:"Shoes",price:900,description:"Simple flats for everyday outfits.",image:"https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=600&q=80"},
-{id:24,name:"Fashion Sneakers",category:"Shoes",price:1500,description:"Casual trainers for everyday styling.",image:"https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80"},
-{id:25,name:"Classic Ladies Heels",category:"Shoes",price:1800,description:"Dress shoes for events and occasions.",image:"https://images.unsplash.com/photo-1515347619252-60a4bf4fff4f?auto=format&fit=crop&w=600&q=80"},
-{id:26,name:"Ladies Flat Slip-On Sandals",category:"Shoes",price:450,description:"Affordable casual sandal style.",image:"https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=600&q=80"},
-
-{id:27,name:"Kitenge Statement Dress",category:"Clothing",price:1800,description:"African-print-inspired style for outings.",image:"https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=600&q=80"},
-{id:28,name:"Ankara Two-Piece Outfit",category:"Clothing",price:2500,description:"Bold print-inspired matching outfit.",image:"https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"},
-{id:29,name:"African Print Shirt",category:"Clothing",price:1200,description:"A statement piece inspired by African prints.",image:"https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=600&q=80"},
-{id:30,name:"Everyday Fashion Handbag",category:"Clothing",price:1200,description:"A practical accessory for daily use.",image:"https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=600&q=80"},
-
-{id:31,name:"African Beaded Necklace",category:"Jewelry",price:450,description:"Colourful beadwork-inspired accessory.",image:"https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=600&q=80"},
-{id:32,name:"Beaded Bracelet Set",category:"Jewelry",price:250,description:"Colourful bracelets to complement your look.",image:"https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=600&q=80"},
-{id:33,name:"Statement Earrings",category:"Jewelry",price:350,description:"Bold accessory for everyday and occasion wear.",image:"https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=80"}
+const departments = [
+  {
+    category:"Body Care",
+    names:[
+      "Nice & Lovely Body Lotion","Vaseline Cocoa Glow","Nivea Nourishing Lotion",
+      "Dove Body Lotion","Clere Body Lotion","Palmer's Cocoa Butter",
+      "Jergens Moisturiser","Shea Butter Body Cream","Cocoa Body Butter",
+      "Aloe Vera Body Lotion"
+    ],
+    base:250,
+    colors:["Classic","Cocoa","Shea","Aloe","Vitamin E","Coconut","Vanilla","Rose","Lavender","Extra Moisture"],
+    images:[
+      "photo-1608248543803-ba4f8c70ae0b",
+      "photo-1556228720-195a672e8a03",
+      "photo-1601049541289-9b1b7bbbfe19"
+    ]
+  },
+  {
+    category:"Face Care",
+    names:[
+      "Vitamin C Face Serum","Hyaluronic Acid Serum","Daily Face Moisturiser",
+      "Gentle Face Cleanser","Face Toner","Aloe Face Gel",
+      "Face Sunscreen SPF","Rosehip Face Oil","Niacinamide Serum",
+      "Hydrating Face Mask"
+    ],
+    base:350,
+    colors:["Daily","Vitamin C","Hydrating","Sensitive Skin","Glow","Oil Control","Aloe","Rose","Vitamin E","Premium"],
+    images:[
+      "photo-1608248543803-ba4f8c70ae0b",
+      "photo-1556229010-6c3f2c9ca5f8",
+      "photo-1608571423902-eed4a5ad8108"
+    ]
+  },
+  {
+    category:"Hair Care",
+    names:[
+      "Cantu Hair Cream","Shea Moisture Hair Treatment","Coconut Hair Oil",
+      "Castor Hair Oil","Leave-In Conditioner","Hair Growth Cream",
+      "Curl Defining Cream","Hair Food Treatment","Hair Styling Gel",
+      "Argan Hair Serum"
+    ],
+    base:300,
+    colors:["Coconut","Castor","Shea","Argan","Olive","Aloe","Original","Extra Hold","Moisture","Repair"],
+    images:[
+      "photo-1522335789203-aabd1fc54bc9",
+      "photo-1608248543803-ba4f8c70ae0b",
+      "photo-1556228720-195a672e8a03"
+    ]
+  },
+  {
+    category:"Shoes",
+    names:[
+      "Classic White Sneakers","Ladies Running Sneakers","Chunky Fashion Sneakers",
+      "Elegant High Heels","Block Heel Shoes","Ladies Ankle Boots",
+      "Long Fashion Boots","Flat Open Sandals","Ladies Slides",
+      "Elegant Ballet Flats"
+    ],
+    base:700,
+    colors:["Black","White","Brown","Beige","Pink","Red","Gold","Silver","Nude","Multicolour"],
+    images:[
+      "photo-1542291026-7eec264c27ff",
+      "photo-1543163521-1bf539c55dd2",
+      "photo-1562273138-f46be4ebdf33"
+    ]
+  },
+  {
+    category:"Clothing",
+    names:[
+      "Ankara Maxi Dress","Kitenge Midi Dress","Ladies Office Blazer",
+      "Casual Denim Jeans","Elegant Ladies Top","Ladies Jumpsuit",
+      "Floral Summer Dress","Two-Piece Outfit","Ladies Pencil Skirt",
+      "Casual Hoodie"
+    ],
+    base:850,
+    colors:["Black","White","Blue","Red","Green","Pink","Purple","Brown","Floral","African Print"],
+    images:[
+      "photo-1539109136881-3be0616acf4b",
+      "photo-1598033129183-c4f50c736f10",
+      "photo-1610030469983-98e550d6193c"
+    ]
+  },
+  {
+    category:"Perfumes",
+    names:[
+      "Lattafa Yara Style Fragrance","Arabian Oud Fragrance","Floral Women's Perfume",
+      "Vanilla Perfume","Fresh Citrus Fragrance","Pocket Perfume",
+      "Women's Body Mist","Luxury Fragrance Gift Set","Rose Perfume",
+      "Sweet Vanilla Fragrance"
+    ],
+    base:450,
+    colors:["Floral","Vanilla","Rose","Oud","Citrus","Amber","Musk","Fresh","Sweet","Classic"],
+    images:[
+      "photo-1541643600914-78b084683601",
+      "photo-1594035910387-fea47794261f",
+      "photo-1592945403244-b3fbafd7f539"
+    ]
+  },
+  {
+    category:"Bags",
+    names:[
+      "Classic Ladies Handbag","Elegant Shoulder Bag","Ladies Tote Bag",
+      "Crossbody Handbag","Evening Clutch Bag","Mini Fashion Bag",
+      "Office Handbag","Quilted Shoulder Bag","Ladies Travel Bag",
+      "Casual Everyday Bag"
+    ],
+    base:900,
+    colors:["Black","Brown","Beige","Cream","Red","Pink","White","Gold","Tan","Burgundy"],
+    images:[
+      "photo-1584917865442-de89df76afd3",
+      "photo-1590874103328-eac38a683ce7",
+      "photo-1566150905458-1bf1fc113f0d"
+    ]
+  },
+  {
+    category:"Watches",
+    names:[
+      "Classic Ladies Watch","Gold-Tone Wristwatch","Silver Ladies Watch",
+      "Elegant Leather Watch","Minimalist Wristwatch","Luxury Style Watch",
+      "Ladies Bracelet Watch","Fashion Dial Watch","Rose Gold Watch",
+      "Everyday Ladies Watch"
+    ],
+    base:650,
+    colors:["Gold","Silver","Rose Gold","Black","Brown","White","Pink","Two Tone","Champagne","Classic"],
+    images:[
+      "photo-1523275335684-37898b6baf30",
+      "photo-1523170335258-f5ed11844a49",
+      "photo-1524592094714-0f0654e20314"
+    ]
+  },
+  {
+    category:"Jewelry",
+    names:[
+      "Statement Earrings","Gold-Tone Necklace","Beaded Bracelet Set",
+      "Elegant Pendant Necklace","Ladies Ring Set","African Beaded Necklace",
+      "Pearl Earrings","Fashion Bangle","Layered Necklace","Charm Bracelet"
+    ],
+    base:200,
+    colors:["Gold","Silver","Pearl","Rose Gold","Black","White","Colourful","Beaded","Classic","Elegant"],
+    images:[
+      "photo-1535632066927-ab7c9ab60908",
+      "photo-1611652022419-a9419f74343d",
+      "photo-1573408301185-9146fe634ad0"
+    ]
+  },
+  {
+    category:"Accessories",
+    names:[
+      "Fashion Sunglasses","Ladies Purse","Silk Hair Scarf",
+      "Fashion Hair Clips","Ladies Belt","Makeup Brush Set",
+      "Cosmetic Travel Bag","Hair Band Set","Fashion Cap","Compact Mirror"
+    ],
+    base:150,
+    colors:["Black","Brown","Gold","Pink","White","Beige","Red","Blue","Floral","Classic"],
+    images:[
+      "photo-1511499767150-a48a237f0083",
+      "photo-1529139574466-a303027c1d8b",
+      "photo-1524504388940-b1c1722653e1"
+    ]
+  }
 ];
+
+const products = [];
+
+let nextProductId = 1;
+
+departments.forEach((department, departmentIndex) => {
+  department.names.forEach((productName, productIndex) => {
+
+    department.colors.forEach((variation, variationIndex) => {
+
+      const imageId =
+        department.images[
+          (productIndex + variationIndex) % department.images.length
+        ];
+
+      const price =
+        department.base +
+        (productIndex * 95) +
+        (variationIndex * 45);
+
+      const isOffer = variationIndex % 4 === 0;
+
+      products.push({
+        id: nextProductId++,
+        name: productName + " - " + variation,
+        category: department.category,
+        price: price,
+        description:
+          "Sample " + variation +
+          " selection from Queen's Closet. Check availability before ordering.",
+        image:
+          "https://images.unsplash.com/" + imageId +
+          "?auto=format&fit=crop&w=600&q=80",
+        color: variation,
+        badge: isOffer ? "SPECIAL OFFER" : "POPULAR",
+        stock: 5 + ((productIndex + variationIndex) % 20)
+      });
+
+    });
+  });
+});
+
+console.log("Queen's Closet catalogue:", products.length, "products");
+
 
 // Kenya international format: 254 + 724670722
 const WHATSAPP_NUMBER = "254724670722";
