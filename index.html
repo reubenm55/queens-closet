@@ -6,53 +6,51 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Queen's Closet | Fashion & Beauty</title>
 <style>
-:root{
- --green:#123c2c;--dark:#081c15;--gold:#d6ad55;
- --cream:#f8f5ed;--white:#fff;
+:root {
+  --green:#123c2c;
+  --dark:#081c15;
+  --gold:#d6ad55;
+  --cream:#f8f5ed;
 }
 *{box-sizing:border-box}
 body{margin:0;font-family:Arial,sans-serif;background:var(--cream);color:#222}
-header{background:linear-gradient(120deg,var(--dark),var(--green));color:white;padding:24px 5%;text-align:center}
-header h1{font-family:Georgia,serif;color:var(--gold);font-size:36px;margin:8px}
-header p{margin:8px}
-nav{background:var(--dark);padding:14px;text-align:center}
+header{background:linear-gradient(120deg,var(--dark),var(--green));color:white;padding:25px;text-align:center}
+header h1{font:36px Georgia;color:var(--gold);margin:5px}
+nav{background:var(--dark);padding:15px;text-align:center}
 nav a{color:white;text-decoration:none;margin:0 12px;font-size:14px}
-.hero{background:linear-gradient(#071b15cc,#071b15cc),url('https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1600&q=80') center/cover;color:white;text-align:center;padding:90px 15px}
-.hero h2{font:42px Georgia;color:var(--gold);margin:0 0 15px}
-.hero p{font-size:17px}
-.gold-button,.checkout,.add{background:var(--gold);border:0;padding:12px 20px;color:#15251b;font-weight:bold;cursor:pointer;border-radius:5px}
-.gold-button{display:inline-block;text-decoration:none;margin-top:15px}
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;padding:25px 5%;background:white}
-.stat{text-align:center;background:#f4f0e5;padding:16px;border-radius:8px}
-.stat strong{display:block;color:var(--green);font-size:24px}
+.hero{background:linear-gradient(#071b15bb,#071b15bb),url('https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1600&q=80') center/cover;text-align:center;color:white;padding:85px 15px}
+.hero h2{font:42px Georgia;color:var(--gold)}
+.hero a{display:inline-block;background:var(--gold);padding:13px 24px;color:#111;text-decoration:none;border-radius:5px;font-weight:bold}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(125px,1fr));gap:12px;padding:25px 5%;background:white}
+.stat{text-align:center;background:#f4f0e5;padding:15px;border-radius:8px}
+.stat strong{display:block;color:var(--green);font-size:23px}
 .stat span{font-size:11px;font-weight:bold}
 main{padding:30px 5%}
-.section-heading{text-align:center;color:var(--green);font:30px Georgia;margin-bottom:10px}
-.intro{text-align:center;color:#666;margin-bottom:25px}
-.controls{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}
-.controls input,.controls select{padding:13px;border:1px solid #ccc;border-radius:5px;flex:1;min-width:160px;background:white}
+.heading{text-align:center;color:var(--green);font:30px Georgia}
+.intro{text-align:center;color:#777}
+.controls{display:flex;gap:10px;margin:20px 0;flex-wrap:wrap}
+.controls input,.controls select{padding:13px;border:1px solid #ccc;border-radius:5px;flex:1;min-width:160px}
 .filters{display:flex;gap:9px;flex-wrap:wrap;margin:20px 0}
 .filter{padding:10px 14px;border:1px solid var(--green);background:white;color:var(--green);border-radius:20px;cursor:pointer}
-.filter.active,.filter:hover{background:var(--green);color:white}
+.filter.active{background:var(--green);color:white}
 #products{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:20px}
 .card{background:white;border-radius:9px;overflow:hidden;box-shadow:0 3px 12px #00000012;display:flex;flex-direction:column}
 .card img{width:100%;height:220px;object-fit:cover;background:#eee}
 .details{padding:15px;display:flex;flex-direction:column;flex:1}
 .category-label{color:#92702e;font-size:11px;font-weight:bold;text-transform:uppercase}
-.details h3{font-size:16px;margin:9px 0}
-.details p{color:#777;font-size:13px;line-height:1.5;flex:1}
-.price{font-size:19px;color:var(--green);font-weight:bold;margin:8px 0}
-.add{width:100%;background:var(--green);color:white}
+.details h3{font-size:16px}
+.details p{font-size:13px;color:#777;line-height:1.5;flex:1}
+.price{font-size:19px;color:var(--green);font-weight:bold}
+.add{background:var(--green);color:white;padding:12px;border:0;border-radius:5px;cursor:pointer;font-weight:bold}
 .add:hover{background:var(--gold);color:#111}
-.empty{text-align:center;grid-column:1/-1;padding:40px}
+.empty{text-align:center;grid-column:1/-1;padding:35px}
 .cart-section{background:white;padding:25px;border-radius:10px;margin-top:40px}
-.cart-row{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px 0;border-bottom:1px solid #eee;flex-wrap:wrap}
+.cart-row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:13px 0;border-bottom:1px solid #eee;flex-wrap:wrap}
 .qty button{padding:5px 10px;cursor:pointer}
-.cart-total{font-size:22px;color:var(--green);font-weight:bold;text-align:right;margin:20px 0}
-.checkout{width:100%;background:#16834b;color:white;font-size:16px}
-footer{background:var(--dark);color:white;text-align:center;padding:30px 15px;margin-top:40px}
+.cart-total{text-align:right;font-size:22px;color:var(--green);font-weight:bold;margin:20px 0}
+.checkout{width:100%;background:#16834b;color:white;padding:15px;border:0;border-radius:5px;font-weight:bold;cursor:pointer}
+footer{background:var(--dark);color:white;text-align:center;padding:30px;margin-top:40px}
 footer strong{color:var(--gold)}
-.small{font-size:12px;color:#aaa}
 @media(max-width:600px){
  header h1{font-size:29px}
  .hero h2{font-size:32px}
@@ -64,293 +62,354 @@ footer strong{color:var(--gold)}
 <body>
 
 <header>
- <h1>QUEEN'S CLOSET</h1>
- <p>Elegance • Beauty • Confidence</p>
- <p>Discover your perfect style.</p>
+<h1>QUEEN'S CLOSET</h1>
+<p>Elegance • Beauty • Confidence</p>
+<p>Discover your perfect style.</p>
 </header>
 
 <nav>
- <a href="#home">HOME</a>
- <a href="#shop">SHOP</a>
- <a href="#cart">MY BAG</a>
- <a href="#contact">CONTACT</a>
+<a href="#home">HOME</a>
+<a href="#shop">SHOP</a>
+<a href="#cart">MY BAG</a>
+<a href="#contact">CONTACT</a>
 </nav>
 
 <section class="hero" id="home">
- <h2>Style That Defines You</h2>
- <p>Discover beautiful fashion, beauty products and accessories.</p>
- <a href="#shop" class="gold-button">EXPLORE COLLECTION</a>
+<h2>Style That Defines You</h2>
+<p>Discover beautiful fashion, beauty products and accessories.</p>
+<a href="#shop">EXPLORE COLLECTION</a>
 </section>
 
 <section class="stats">
- <div class="stat"><strong id="allCount">0</strong><span>ALL PRODUCTS</span></div>
- <div class="stat"><strong id="bodyCareCount">0</strong><span>BODY CARE</span></div>
- <div class="stat"><strong id="faceCareCount">0</strong><span>FACE CARE</span></div>
- <div class="stat"><strong id="hairCareCount">0</strong><span>HAIR CARE</span></div>
- <div class="stat"><strong id="clothesCount">0</strong><span>CLOTHING</span></div>
- <div class="stat"><strong id="shoesCount">0</strong><span>SHOES</span></div>
- <div class="stat"><strong id="perfumesCount">0</strong><span>PERFUMES</span></div>
- <div class="stat"><strong id="bagsCount">0</strong><span>BAGS</span></div>
- <div class="stat"><strong id="watchesCount">0</strong><span>WATCHES</span></div>
- <div class="stat"><strong id="jewelryCount">0</strong><span>JEWELLERY</span></div>
- <div class="stat"><strong id="accessoriesCount">0</strong><span>ACCESSORIES</span></div>
+<div class="stat"><strong id="allCount">0</strong><span>ALL PRODUCTS</span></div>
+<div class="stat"><strong id="bodyCareCount">0</strong><span>BODY CARE</span></div>
+<div class="stat"><strong id="faceCareCount">0</strong><span>FACE CARE</span></div>
+<div class="stat"><strong id="hairCareCount">0</strong><span>HAIR CARE</span></div>
+<div class="stat"><strong id="clothesCount">0</strong><span>CLOTHING</span></div>
+<div class="stat"><strong id="shoesCount">0</strong><span>SHOES</span></div>
+<div class="stat"><strong id="perfumesCount">0</strong><span>PERFUMES</span></div>
+<div class="stat"><strong id="bagsCount">0</strong><span>BAGS</span></div>
+<div class="stat"><strong id="watchesCount">0</strong><span>WATCHES</span></div>
+<div class="stat"><strong id="jewelryCount">0</strong><span>JEWELLERY</span></div>
+<div class="stat"><strong id="accessoriesCount">0</strong><span>ACCESSORIES</span></div>
 </section>
 
 <main id="shop">
- <h2 class="section-heading">Our Collection</h2>
- <p class="intro">Find something beautiful for every occasion.</p>
+<h2 class="heading">Our Collection</h2>
+<p class="intro">Find something beautiful for every occasion.</p>
 
- <div class="controls">
-  <input id="search" type="search" placeholder="Search products..." oninput="renderProducts()">
-  <select id="sort" onchange="renderProducts()">
-   <option value="default">Sort: Featured</option>
-   <option value="low">Price: Low to High</option>
-   <option value="high">Price: High to Low</option>
-  </select>
- </div>
+<div class="controls">
+<input id="search" type="search" placeholder="Search products..." oninput="renderProducts()">
+<select id="sort" onchange="renderProducts()">
+<option value="default">Sort: Featured</option>
+<option value="low">Price: Low to High</option>
+<option value="high">Price: High to Low</option>
+</select>
+</div>
 
- <div class="filters" id="filters"></div>
- <h3 id="collectionTitle">Featured Collection</h3>
- <div id="products"></div>
+<div class="filters" id="filters"></div>
+<h3 id="collectionTitle">Featured Collection</h3>
+<div id="products"></div>
 
- <section class="cart-section" id="cart">
-  <h2 class="section-heading">Your Shopping Bag</h2>
-  <div id="cartItems"></div>
-  <div class="cart-total" id="cartTotal">Total: KSh 0</div>
-  <button class="checkout" onclick="checkout()">ORDER VIA WHATSAPP</button>
-  <p class="small">Your order will be sent to our WhatsApp for confirmation.</p>
- </section>
+<section class="cart-section" id="cart">
+<h2 class="heading">Your Shopping Bag</h2>
+<div id="cartItems"></div>
+<div class="cart-total" id="cartTotal">Total: KSh 0</div>
+<button class="checkout" onclick="checkout()">ORDER VIA WHATSAPP</button>
+<p>Orders are sent to WhatsApp for confirmation.</p>
+</section>
 </main>
 
 <footer id="contact">
- <h2><strong>QUEEN'S CLOSET</strong></h2>
- <p>Your style. Your confidence. Your elegance.</p>
- <p>WhatsApp: 0724670722</p>
- <p>Kenya</p>
- <p class="small">© 2026 Queen's Closet. All rights reserved.</p>
+<h2><strong>QUEEN'S CLOSET</strong></h2>
+<p>Your style. Your confidence. Your elegance.</p>
+<p>WhatsApp: 0724670722</p>
+<p>Kenya</p>
+<p>© 2026 Queen's Closet. All rights reserved.</p>
 </footer>
 
 <script>
 const departments = [
 {
- category:"Body Care",base:250,
- names:["Nice & Lovely Body Lotion","Vaseline Cocoa Lotion","Nivea Body Lotion","Dove Body Cream","Shea Butter Body Cream","Aloe Vera Body Lotion","Cocoa Butter Cream","Vitamin E Body Lotion","Body Scrub","Body Moisturiser"],
- variations:["Original","Cocoa","Shea Butter","Aloe Vera","Vitamin E","Coconut","Rose","Vanilla","Hydrating","Premium"],
- images:["photo-1608248543803-ba4f8c70ae0b","photo-1556229010-6c3f2c9ca5f8","photo-1608571423902-eed4a5ad8108"]
+category:"Body Care",base:250,
+names:[
+"Nice & Lovely Body Lotion","Vaseline Cocoa Lotion","Nivea Body Lotion",
+"Dove Body Cream","Shea Butter Body Cream","Aloe Vera Body Lotion",
+"Cocoa Butter Cream","Vitamin E Body Lotion","Exfoliating Body Scrub",
+"Daily Body Moisturiser"
+],
+images:["photo-1608248543803-ba4f8c70ae0b","photo-1556229010-6c3f2c9ca5f8","photo-1608571423902-eed4a5ad8108"]
 },
 {
- category:"Face Care",base:350,
- names:["Vitamin C Face Serum","Hyaluronic Acid Serum","Daily Face Moisturiser","Gentle Face Cleanser","Face Toner","Aloe Face Gel","Face Sunscreen SPF","Rosehip Face Oil","Niacinamide Serum","Hydrating Face Mask"],
- variations:["Daily","Vitamin C","Hydrating","Sensitive Skin","Glow","Oil Control","Aloe","Rose","Vitamin E","Premium"],
- images:["photo-1608248543803-ba4f8c70ae0b","photo-1556229010-6c3f2c9ca5f8","photo-1608571423902-eed4a5ad8108"]
+category:"Face Care",base:350,
+names:[
+"Vitamin C Face Serum","Hyaluronic Acid Serum","Daily Face Moisturiser",
+"Gentle Face Cleanser","Refreshing Face Toner","Aloe Face Gel",
+"Face Sunscreen SPF","Rosehip Face Oil","Niacinamide Serum",
+"Hydrating Face Mask"
+],
+images:["photo-1556229010-6c3f2c9ca5f8","photo-1608248543803-ba4f8c70ae0b","photo-1608571423902-eed4a5ad8108"]
 },
 {
- category:"Hair Care",base:300,
- names:["Cantu Hair Cream","Shea Moisture Hair Treatment","Coconut Hair Oil","Castor Hair Oil","Leave-In Conditioner","Hair Growth Cream","Curl Defining Cream","Hair Food Treatment","Hair Styling Gel","Argan Hair Serum"],
- variations:["Coconut","Castor","Shea","Argan","Olive","Aloe","Original","Extra Hold","Moisture","Repair"],
- images:["photo-1522335789203-aabd1fc54bc9","photo-1608248543803-ba4f8c70ae0b","photo-1556228720-195a672e8a03"]
+category:"Hair Care",base:300,
+names:[
+"Cantu Hair Cream","Shea Moisture Hair Treatment","Coconut Hair Oil",
+"Castor Hair Oil","Leave-In Conditioner","Hair Growth Cream",
+"Curl Defining Cream","Hair Food Treatment","Hair Styling Gel",
+"Argan Hair Serum"
+],
+images:["photo-1522335789203-aabd1fc54bc9","photo-1608248543803-ba4f8c70ae0b","photo-1556228720-195a672e8a03"]
 },
 {
- category:"Shoes",base:700,
- names:["Classic White Sneakers","Ladies Running Sneakers","Chunky Fashion Sneakers","Elegant High Heels","Block Heel Shoes","Ladies Ankle Boots","Long Fashion Boots","Flat Open Sandals","Ladies Slides","Elegant Ballet Flats"],
- variations:["Black","White","Brown","Beige","Pink","Red","Gold","Silver","Nude","Multicolour"],
- images:["photo-1542291026-7eec264c27ff","photo-1543163521-1bf539c55dd2","photo-1562273138-f46be4ebdf33"]
+category:"Shoes",base:700,
+names:[
+"Classic White Sneakers","Ladies Running Sneakers","Chunky Fashion Sneakers",
+"Elegant High Heels","Block Heel Shoes","Ladies Ankle Boots",
+"Long Fashion Boots","Flat Open Sandals","Ladies Slides",
+"Elegant Ballet Flats"
+],
+images:["photo-1542291026-7eec264c27ff","photo-1543163521-1bf539c55dd2","photo-1562273138-f46be4ebdf33"]
 },
 {
- category:"Clothing",base:850,
- names:["Ankara Maxi Dress","Kitenge Midi Dress","Ladies Office Blazer","Casual Denim Jeans","Elegant Ladies Top","Ladies Jumpsuit","Floral Summer Dress","Two-Piece Outfit","Ladies Pencil Skirt","Casual Hoodie"],
- variations:["Black","White","Blue","Red","Green","Pink","Purple","Brown","Floral","African Print"],
- images:["photo-1539109136881-3be0616acf4b","photo-1598033129183-c4f50c736f10","photo-1610030469983-98e550d6193c"]
+category:"Clothing",base:850,
+names:[
+"Ankara Maxi Dress","Kitenge Midi Dress","Ladies Office Blazer",
+"Casual Denim Jeans","Elegant Ladies Top","Ladies Jumpsuit",
+"Floral Summer Dress","Two-Piece Outfit","Ladies Pencil Skirt",
+"Casual Hoodie"
+],
+images:["photo-1539109136881-3be0616acf4b","photo-1598033129183-c4f50c736f10","photo-1610030469983-98e550d6193c"]
 },
 {
- category:"Perfumes",base:450,
- names:["Lattafa Yara Style Fragrance","Arabian Oud Fragrance","Floral Women's Perfume","Vanilla Perfume","Fresh Citrus Fragrance","Pocket Perfume","Women's Body Mist","Luxury Fragrance Gift Set","Rose Perfume","Sweet Vanilla Fragrance"],
- variations:["Floral","Vanilla","Rose","Oud","Citrus","Amber","Musk","Fresh","Sweet","Classic"],
- images:["photo-1541643600914-78b084683601","photo-1594035910387-fea47794261f","photo-1592945403244-b3fbafd7f539"]
+category:"Perfumes",base:450,
+names:[
+"Lattafa Yara Style Fragrance","Arabian Oud Fragrance","Floral Women's Perfume",
+"Vanilla Perfume","Fresh Citrus Fragrance","Pocket Perfume",
+"Women's Body Mist","Luxury Fragrance Gift Set","Rose Perfume",
+"Sweet Vanilla Fragrance"
+],
+images:["photo-1541643600914-78b084683601","photo-1594035910387-fea47794261f","photo-1592945403244-b3fbafd7f539"]
 },
 {
- category:"Bags",base:900,
- names:["Classic Ladies Handbag","Elegant Shoulder Bag","Ladies Tote Bag","Crossbody Handbag","Evening Clutch Bag","Mini Fashion Bag","Office Handbag","Quilted Shoulder Bag","Ladies Travel Bag","Casual Everyday Bag"],
- variations:["Black","Brown","Beige","Cream","Red","Pink","White","Gold","Tan","Burgundy"],
- images:["photo-1584917865442-de89df76afd3","photo-1590874103328-eac38a683ce7","photo-1566150905458-1bf1fc113f0d"]
+category:"Bags",base:900,
+names:[
+"Classic Ladies Handbag","Elegant Shoulder Bag","Ladies Tote Bag",
+"Crossbody Handbag","Evening Clutch Bag","Mini Fashion Bag",
+"Office Handbag","Quilted Shoulder Bag","Ladies Travel Bag",
+"Casual Everyday Bag"
+],
+images:["photo-1584917865442-de89df76afd3","photo-1590874103328-eac38a683ce7","photo-1566150905458-1bf1fc113f0d"]
 },
 {
- category:"Watches",base:650,
- names:["Classic Ladies Watch","Gold-Tone Wristwatch","Silver Ladies Watch","Elegant Leather Watch","Minimalist Wristwatch","Luxury Style Watch","Ladies Bracelet Watch","Fashion Dial Watch","Rose Gold Watch","Everyday Ladies Watch"],
- variations:["Gold","Silver","Rose Gold","Black","Brown","White","Pink","Two Tone","Champagne","Classic"],
- images:["photo-1523275335684-37898b6baf30","photo-1523170335258-f5ed11844a49","photo-1524592094714-0f0654e20314"]
+category:"Watches",base:650,
+names:[
+"Classic Ladies Watch","Gold-Tone Wristwatch","Silver Ladies Watch",
+"Elegant Leather Watch","Minimalist Wristwatch","Luxury Style Watch",
+"Ladies Bracelet Watch","Fashion Dial Watch","Rose Gold Watch",
+"Everyday Ladies Watch"
+],
+images:["photo-1523275335684-37898b6baf30","photo-1523170335258-f5ed11844a49","photo-1524592094714-0f0654e20314"]
 },
 {
- category:"Jewelry",base:200,
- names:["Statement Earrings","Gold-Tone Necklace","Beaded Bracelet Set","Elegant Pendant Necklace","Ladies Ring Set","African Beaded Necklace","Pearl Earrings","Fashion Bangle","Layered Necklace","Charm Bracelet"],
- variations:["Gold","Silver","Pearl","Rose Gold","Black","White","Colourful","Beaded","Classic","Elegant"],
- images:["photo-1535632066927-ab7c9ab60908","photo-1611652022419-a9419f74343d","photo-1573408301185-9146fe634ad0"]
+category:"Jewelry",base:200,
+names:[
+"Statement Earrings","Gold-Tone Necklace","Beaded Bracelet Set",
+"Elegant Pendant Necklace","Ladies Ring Set","African Beaded Necklace",
+"Pearl Earrings","Fashion Bangle","Layered Necklace","Charm Bracelet"
+],
+images:["photo-1535632066927-ab7c9ab60908","photo-1611652022419-a9419f74343d","photo-1573408301185-9146fe634ad0"]
 },
 {
- category:"Accessories",base:150,
- names:["Fashion Sunglasses","Ladies Purse","Silk Hair Scarf","Fashion Hair Clips","Ladies Belt","Makeup Brush Set","Cosmetic Travel Bag","Hair Band Set","Fashion Cap","Compact Mirror"],
- variations:["Black","Brown","Gold","Pink","White","Beige","Red","Blue","Floral","Classic"],
- images:["photo-1511499767150-a48a237f0083","photo-1529139574466-a303027c1d8b","photo-1524504388940-b1c1722653e1"]
+category:"Accessories",base:150,
+names:[
+"Fashion Sunglasses","Ladies Purse","Silk Hair Scarf",
+"Fashion Hair Clips","Ladies Belt","Makeup Brush Set",
+"Cosmetic Travel Bag","Hair Band Set","Fashion Cap","Compact Mirror"
+],
+images:["photo-1511499767150-a48a237f0083","photo-1529139574466-a303027c1d8b","photo-1524504388940-b1c1722653e1"]
 }
 ];
 
+// Create exactly one listing for each product name.
 const products=[];
 let nextProductId=1;
 
-departments.forEach((department,di)=>{
- department.names.forEach((productName,pi)=>{
-  department.colors.forEach((variation,vi)=>{
-   const imageId=department.images[(pi+vi)%department.images.length];
-   products.push({
-    id:nextProductId++,
-    name:productName+" - "+variation,
-    category:department.category,
-    price:department.base+(pi*95)+(vi*45),
-    description:"Sample "+variation+" selection from Queen's Closet. Check availability before ordering.",
-    image:"https://images.unsplash.com/"+imageId+"?auto=format&fit=crop&w=600&q=80"
-   });
-  });
- });
+departments.forEach(department=>{
+department.names.forEach((productName,index)=>{
+const imageId=department.images[index % department.images.length];
+
+products.push({
+id:nextProductId++,
+name:productName,
+category:department.category,
+price:department.base+(index*95),
+description:productName+" from Queen's Closet. Contact us to confirm availability.",
+image:"https://images.unsplash.com/"+imageId+"?auto=format&fit=crop&w=600&q=80"
 });
+});
+});
+
+// Check that no product names are repeated.
+const productNames=products.map(p=>p.name.toLowerCase());
+if(new Set(productNames).size!==products.length){
+console.error("Duplicate product names detected!");
+}
 
 let currentCategory="All";
 let cart={};
 
-function money(n){
- return "KSh "+n.toLocaleString("en-KE");
+function money(number){
+return "KSh "+number.toLocaleString("en-KE");
 }
 
 function renderCounts(){
- const ids={
-  "Body Care":"bodyCareCount",
-  "Face Care":"faceCareCount",
-  "Hair Care":"hairCareCount",
-  "Clothing":"clothesCount",
-  "Shoes":"shoesCount",
-  "Perfumes":"perfumesCount",
-  "Bags":"bagsCount",
-  "Watches":"watchesCount",
-  "Jewelry":"jewelryCount",
-  "Accessories":"accessoriesCount"
- };
- document.getElementById("allCount").textContent=products.length;
- Object.entries(ids).forEach(([category,id])=>{
-  document.getElementById(id).textContent=products.filter(p=>p.category===category).length;
- });
+const ids={
+"Body Care":"bodyCareCount",
+"Face Care":"faceCareCount",
+"Hair Care":"hairCareCount",
+"Clothing":"clothesCount",
+"Shoes":"shoesCount",
+"Perfumes":"perfumesCount",
+"Bags":"bagsCount",
+"Watches":"watchesCount",
+"Jewelry":"jewelryCount",
+"Accessories":"accessoriesCount"
+};
+
+document.getElementById("allCount").textContent=products.length;
+
+Object.entries(ids).forEach(([category,id])=>{
+document.getElementById(id).textContent=
+products.filter(p=>p.category===category).length;
+});
 }
 
 function renderFilters(){
- const categories=["All",...departments.map(d=>d.category)];
- const box=document.getElementById("filters");
- box.innerHTML="";
- categories.forEach(category=>{
-  const count=category==="All"?products.length:products.filter(p=>p.category===category).length;
-  const button=document.createElement("button");
-  button.className="filter"+(currentCategory===category?" active":"");
-  button.textContent=category+" ("+count+")";
-  button.onclick=()=>{
-   currentCategory=category;
-   renderFilters();
-   renderProducts();
-  };
-  box.appendChild(button);
- });
+const categories=["All",...departments.map(d=>d.category)];
+const box=document.getElementById("filters");
+box.innerHTML="";
+
+categories.forEach(category=>{
+const count=category==="All"
+?products.length
+:products.filter(p=>p.category===category).length;
+
+const button=document.createElement("button");
+button.className="filter"+(currentCategory===category?" active":"");
+button.textContent=category+" ("+count+")";
+
+button.onclick=()=>{
+currentCategory=category;
+renderFilters();
+renderProducts();
+};
+
+box.appendChild(button);
+});
 }
 
 function renderProducts(){
- const el=document.getElementById("products");
- const search=document.getElementById("search").value.toLowerCase();
- let list=products.filter(p=>
-  (currentCategory==="All"||p.category===currentCategory)&&
-  (p.name.toLowerCase().includes(search)||p.category.toLowerCase().includes(search))
- );
- const sort=document.getElementById("sort").value;
- if(sort==="low")list.sort((a,b)=>a.price-b.price);
- if(sort==="high")list.sort((a,b)=>b.price-a.price);
+const el=document.getElementById("products");
+const search=document.getElementById("search").value.toLowerCase();
 
- document.getElementById("collectionTitle").textContent=
-  currentCategory==="All"?"Featured Collection":currentCategory+" Collection";
+let list=products.filter(p=>
+(currentCategory==="All"||p.category===currentCategory)&&
+(p.name.toLowerCase().includes(search)||
+p.category.toLowerCase().includes(search))
+);
 
- if(!list.length){
-  el.innerHTML='<p class="empty">No products found. Try another search.</p>';
-  return;
- }
+const sort=document.getElementById("sort").value;
+if(sort==="low")list.sort((a,b)=>a.price-b.price);
+if(sort==="high")list.sort((a,b)=>b.price-a.price);
 
- el.innerHTML=list.map(p=>`
-  <article class="card">
-   <img src="${p.image}" alt="${p.name}" loading="lazy">
-   <div class="details">
-    <span class="category-label">${p.category}</span>
-    <h3>${p.name}</h3>
-    <div class="price">${money(p.price)}</div>
-    <p>${p.description}</p>
-    <button class="add" onclick="addToCart(${p.id})">ADD TO BAG</button>
-   </div>
-  </article>
- `).join("");
+document.getElementById("collectionTitle").textContent=
+currentCategory==="All"?"Featured Collection":currentCategory+" Collection";
+
+if(!list.length){
+el.innerHTML='<p class="empty">No products found. Try another search.</p>';
+return;
+}
+
+el.innerHTML=list.map(p=>`
+<article class="card">
+<img src="${p.image}" alt="${p.name}" loading="lazy">
+<div class="details">
+<span class="category-label">${p.category}</span>
+<h3>${p.name}</h3>
+<div class="price">${money(p.price)}</div>
+<p>${p.description}</p>
+<button class="add" onclick="addToCart(${p.id})">ADD TO BAG</button>
+</div>
+</article>
+`).join("");
 }
 
 function addToCart(id){
- cart[id]=(cart[id]||0)+1;
- renderCart();
+cart[id]=(cart[id]||0)+1;
+renderCart();
 }
 
 function changeQuantity(id,change){
- cart[id]=(cart[id]||0)+change;
- if(cart[id]<=0)delete cart[id];
- renderCart();
+cart[id]=(cart[id]||0)+change;
+if(cart[id]<=0)delete cart[id];
+renderCart();
 }
 
 function renderCart(){
- const box=document.getElementById("cartItems");
- const entries=Object.entries(cart);
- let total=0;
+const box=document.getElementById("cartItems");
+const entries=Object.entries(cart);
+let total=0;
 
- if(!entries.length){
-  box.innerHTML="<p>Your shopping bag is empty. Start shopping!</p>";
- }else{
-  box.innerHTML=entries.map(([id,quantity])=>{
-   const p=products.find(item=>item.id===Number(id));
-   if(!p)return "";
-   total+=p.price*quantity;
-   return `
-    <div class="cart-row">
-     <div><strong>${p.name}</strong><br>${money(p.price)} each</div>
-     <div class="qty">
-      <button onclick="changeQuantity(${p.id},-1)">−</button>
-      ${quantity}
-      <button onclick="changeQuantity(${p.id},1)">+</button>
-     </div>
-     <strong>${money(p.price*quantity)}</strong>
-    </div>
-   `;
-  }).join("");
- }
+if(!entries.length){
+box.innerHTML="<p>Your shopping bag is empty. Start shopping!</p>";
+}else{
+box.innerHTML=entries.map(([id,quantity])=>{
+const p=products.find(item=>item.id===Number(id));
+if(!p)return "";
+total+=p.price*quantity;
 
- document.getElementById("cartTotal").textContent="Total: "+money(total);
+return `
+<div class="cart-row">
+<div><strong>${p.name}</strong><br>${money(p.price)} each</div>
+<div class="qty">
+<button onclick="changeQuantity(${p.id},-1)">−</button>
+${quantity}
+<button onclick="changeQuantity(${p.id},1)">+</button>
+</div>
+<strong>${money(p.price*quantity)}</strong>
+</div>
+`;
+}).join("");
+}
+
+document.getElementById("cartTotal").textContent="Total: "+money(total);
 }
 
 function checkout(){
- const entries=Object.entries(cart);
- if(!entries.length){
-  alert("Your shopping bag is empty. Please add products first.");
-  return;
- }
+const entries=Object.entries(cart);
 
- let message="Hello Queen's Closet! I would like to place this order:%0A%0A";
- let total=0;
+if(!entries.length){
+alert("Your shopping bag is empty. Please add products first.");
+return;
+}
 
- entries.forEach(([id,quantity])=>{
-  const p=products.find(item=>item.id===Number(id));
-  if(!p)return;
-  message+=encodeURIComponent(p.name+" x "+quantity+" = "+money(p.price*quantity))+"%0A";
-  total+=p.price*quantity;
- });
+let message="Hello Queen's Closet! I would like to place this order:\n\n";
+let total=0;
 
- message+="%0A"+encodeURIComponent("Total: "+money(total));
- message+="%0A%0APlease confirm availability. Thank you!";
+entries.forEach(([id,quantity])=>{
+const p=products.find(item=>item.id===Number(id));
+if(!p)return;
+message+=p.name+" x "+quantity+" = "+money(p.price*quantity)+"\n";
+total+=p.price*quantity;
+});
 
- window.open("https://wa.me/254724670722?text="+message,"_blank");
+message+="\nTotal: "+money(total);
+message+="\n\nPlease confirm availability. Thank you!";
+
+window.open(
+"https://wa.me/254724670722?text="+encodeURIComponent(message),
+"_blank"
+);
 }
 
 renderCounts();
@@ -358,5 +417,6 @@ renderFilters();
 renderProducts();
 renderCart();
 </script>
+
 </body>
 </html>
